@@ -18,6 +18,7 @@ class CityIndex extends Component{
 
     fetchData = () => {
         CityModel.all().then((data) => {
+            console.log("citymodel data")
             console.log(data)
             this.setState({
                 cityData: data
@@ -36,18 +37,18 @@ class CityIndex extends Component{
     // map information for a city to a show component
     // map the
     render(){
-        let cityNames = this.state.cityData.map((oneCity, idx) => {
+        /* let cityNames = this.state.cityData.map((oneCity, idx) => {
             return(
-                <CityList key = {idx} oneCity = {oneCity} />
+                <CityList key = {idx} idx={idx} oneCity = {oneCity} updateCityIndex={this.updateCityIndex} />
             )
-        })
+        }) */
 
         return(
             <div>
                 <div>
-                    {cityNames} {/* left side, uses all city names/images */}
+                    <CityList cityData={this.state.cityData} updateCityIndex={this.updateCityIndex}/>
                 </div>
-                <CityShow cityData = {this.state.cityData[0]}/> {/* top right, uses one city id */}
+                <CityShow cityData = {this.state.cityData[this.state.categoryIndex]}/> {/* top right, uses one city id */}
             
             </div>
         )

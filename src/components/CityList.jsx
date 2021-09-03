@@ -1,13 +1,29 @@
-function CityList(props){
-    console.log(props.oneCity)
+function CityList(props) {
+    /* console.log(props.oneCity) */
+    function handleCityClick(idx) {
+        props.updateCityIndex(idx)
+        console.log("list element clicked" + idx)
+    }
 
-
-    return(
+    const allCities = props.cityData.map((oneCity, idx) => {
+        return (
+            <li
+                key={idx}
+                onClick={() => handleCityClick(idx)}
+            >
+                {oneCity.name}
+            </li>
+        )
+    })
+    return (
         <div>
-           <h3>{props.oneCity.name}</h3>
+            {allCities}
         </div>
+
+
+
     )
-    
+
 }
 
 export default CityList
