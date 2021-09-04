@@ -1,17 +1,30 @@
 function CityShow(props) {
     console.log("city show props")
     console.log(props.cityData)
-    const cityPosts = props.cityData.posts.map((onePost,idx)=>{
+    
+    let cityInfo = null
+    if (props.cityData === undefined) {
+        cityInfo = {
+            name:"",
+            picture:"",
+            posts:[{
+                title:"",
+                content:""
+            }]
+        }
+    } else {
+        cityInfo = props.cityData
+    }
+    const cityPosts = cityInfo.posts.map((onePost, idx) => {
         return <li key={idx}>
-                <h6>{onePost.title}</h6>
-                <p>{onePost.content}</p>
-             </li>
+            <h6>{onePost.title}</h6>
+            <p>{onePost.content}</p>
+        </li>
     })
- 
-    return(
+    return (
         <div>
-            <h1>{props.cityData.name}</h1>
-            <h3>{props.cityData.picture}</h3>
+            <h1>{cityInfo.name}</h1>
+            <h3>{cityInfo.picture}</h3>
             {cityPosts}
         </div>
     )
