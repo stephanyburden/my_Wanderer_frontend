@@ -1,8 +1,9 @@
 function CityShow(props) {
-    console.log("city show props")
     console.log(props.cityData)
     
     let cityInfo = null
+
+    //conditional that helps prevent something if the data call is slower than the page load 
     if (props.cityData === undefined) {
         cityInfo = {
             name:"",
@@ -15,16 +16,19 @@ function CityShow(props) {
     } else {
         cityInfo = props.cityData
     }
+
+    //maps the data to access the props array (think recipelist and recipe component in one from the recipe lesson)
     const cityPosts = cityInfo.posts.map((onePost, idx) => {
         return <li key={idx}>
-            <h6>{onePost.title}</h6>
+            <h3>{onePost.title}</h3>
             <p>{onePost.content}</p>
         </li>
     })
+
     return (
         <div>
             <h1>{cityInfo.name}</h1>
-            <h3>{cityInfo.picture}</h3>
+            <img alt = "city" src = {cityInfo.picture}/>
             {cityPosts}
         </div>
     )

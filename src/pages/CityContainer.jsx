@@ -16,10 +16,11 @@ class CityIndex extends Component{
       this.fetchData()
     }
 
+    //makes a call to our CityModel which then makes a call to our backend which hosts our data
     fetchData = () => {
         CityModel.all().then((data) => {
-            console.log("citymodel data")
-            console.log(data)
+            // console.log("citymodel data")
+            // console.log(data)
             this.setState({
                 cityData: data
             })
@@ -33,16 +34,7 @@ class CityIndex extends Component{
         });
     }
 
-    
-    // map information for a city to a show component
-    // map the
     render(){
-        /* let cityNames = this.state.cityData.map((oneCity, idx) => {
-            return(
-                <CityList key = {idx} idx={idx} oneCity = {oneCity} updateCityIndex={this.updateCityIndex} />
-            )
-        }) */
-
         return(
             <div>
                 <div>
