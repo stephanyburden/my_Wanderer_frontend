@@ -9,6 +9,12 @@ class CityModel{
                 console.log(err)
             })
     }
-
+    
+    //makes a fetch call to our posts controller to show a post
+    static show(cityId, postId) {
+        return fetch(`${url}/${cityId}/posts/${postId}`)
+            .then((response) => response.json())
+    }
 }
+
 export default CityModel
