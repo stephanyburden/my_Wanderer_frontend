@@ -29,6 +29,7 @@ function CityShow(props) {
         <div>
             <h1>{cityInfo.name}</h1>
             <img alt = "city" src = {cityInfo.picture}/>
+            <button>Add New Post</button>
             {cityPosts}
         </div>
     )
