@@ -1,6 +1,7 @@
+import Post from "./Post"
+
+
 function CityShow(props) {
-    console.log(props.cityData)
-    
     let cityInfo = null
 
     //conditional that helps prevent something if the data call is slower than the page load 
@@ -19,16 +20,17 @@ function CityShow(props) {
 
     //maps the data to access the props array (think recipelist and recipe component in one from the recipe lesson)
     const cityPosts = cityInfo.posts.map((onePost, idx) => {
-        return <li key={idx}>
-            <h3>{onePost.title}</h3>
-            <p>{onePost.content}</p>
-        </li>
+        // console.log(cityInfo)
+        return(
+            <Post key = {idx} onePost = {onePost} cityId = {cityInfo._id}/>
+        )
     })
 
     return (
         <div>
             <h1>{cityInfo.name}</h1>
             <img alt = "city" src = {cityInfo.picture}/>
+            <br/>
             {cityPosts}
         </div>
     )
