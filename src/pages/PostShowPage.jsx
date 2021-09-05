@@ -3,15 +3,16 @@ import CityModel from '../models/CityModel';
 
 class PostShowPage extends React.Component {
     state = {
-        title: "", 
+        title: "",
         content: ""
     }
 
     componentDidMount() {
-        const cityId = this.props.match.params.cityId 
+        const cityId = this.props.match.params.cityId
         const postId = this.props.match.params.postsId;
 
-        CityModel.show(cityId, postId).then((data) => {
+        CityModel.showPost(cityId, postId).then((data) => {
+            console.log("post show")
             console.log(data)
             this.setState({
                 title: data.title,
@@ -21,8 +22,7 @@ class PostShowPage extends React.Component {
     }
 
     render() {
-        console.log(this.props)
-        return(
+        return (
             <div>
                 <h1>Post Show Page</h1>
                 <h3>{this.state.title}</h3>

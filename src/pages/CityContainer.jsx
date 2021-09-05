@@ -47,4 +47,3 @@ class CityIndex extends Component{
 export default CityIndex
 
 
-{/* <CityPosts/> bottom right, uses one city's posts */} 

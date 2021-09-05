@@ -9,11 +9,32 @@ class CityModel{
                 console.log(err)
             })
     }
-    
+    static newPost(cityId,post){
+        return fetch(`${url}/${cityId}/posts`,{
+            method:'POST',
+            body:post,
+            headers: new Headers()
+        }).then((response)=>{
+            console.log(response.json)
+            return response.json()
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    }
     //makes a fetch call to our posts controller to show a post
-    static show(cityId, postId) {
+    static showPost(cityId, postId) {
         return fetch(`${url}/${cityId}/posts/${postId}`)
             .then((response) => response.json())
+    }
+    static showCity(cityId) {
+        return fetch(`${url}/${cityId}`)
+        .then((response)=>{
+            return response.json()
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
     }
 }
 
