@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from '../components/Header'
+import '../css/Aboutcontainer.css'
+import AboutImage from '../images/aboutpage_bhutantemple.jpg'
+
 
 class AboutContainer extends React.Component {
     render(){
         return(
-            <div className="is-preload">
-
-            {/* <!-- Wrapper --> */}
                 <div id="wrapper">
                     {/* <!-- Nav --> */}
                    <Header />
@@ -21,7 +21,7 @@ class AboutContainer extends React.Component {
                                         facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
                                         amet nullam sed etiam veroeros.</p>
                                     </header>
-                                    <div className="image main"><img src="./images/aboutpage_bhutantemple.jpg" alt="" /></div>
+                                    <div className="image main"><img src= {AboutImage} alt="" /></div>
                                     <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. className aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
                                 </section>
@@ -36,13 +36,10 @@ class AboutContainer extends React.Component {
                     <script src="assets/js/util.js"></script>
                     <script src="assets/js/main.js"></script>
                  </div>    
-        </div>
+    
         )
     }
 }
     
 export default AboutContainer
-
-
-               
 
