@@ -26,8 +26,13 @@ class CityModel{
     }
     static deletePost(cityId, postId){
         return fetch(`${url}/${cityId}/posts/${postId}`,{
-            method:'DELETE'
+            method:'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+              },
         }).then((response)=>{
+            
+            
             return response.json()
         }).catch((err)=>{
             console.log(err)
