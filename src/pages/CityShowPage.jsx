@@ -49,7 +49,20 @@ class CityShowPage extends React.Component {
         })
     }
     updatePost = (cityId,postID,post)=>{
-        console.log("update")
+        CityModel.updatePost(cityId,postID,post)
+            .then((res)=>{
+                console.log("res is ")
+                console.log(res)
+                let updatePostList = this.state.posts
+                let index = updatePostList.findIndex((p)=>{
+                    return p._id === res._id
+                }) 
+                console.log(index)
+                updatePostList[index]=res
+                this.setState({posts:updatePostList})
+            }).catch((err)=>{
+                console.log(err)
+            })
     }
     
     render() {

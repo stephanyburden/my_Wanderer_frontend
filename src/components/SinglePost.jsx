@@ -40,6 +40,7 @@ class SinglePost extends Component {
                 </div>
                 <EditForm
                     post={this.props.post}
+                    cityID={this.props.cityID}
                     style={this.state.formStyle}
                     updatePost={this.props.updatePost}
                     toggleBodyForm={this.toggleBodyForm}
