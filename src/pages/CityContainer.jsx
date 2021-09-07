@@ -2,9 +2,10 @@ import CityList from '../components/CityList.jsx'
 import {Component} from 'react'
 import CityModel from '../models/CityModel.js'
 import CityShow from '../components/CityShow.jsx'
+import Header from '../components/Header.jsx'
 
 
-class CityIndex extends Component{
+class CityContainer extends Component{
     state = {
         cityData: [],
         categoryIndex: 0
@@ -36,14 +37,17 @@ class CityIndex extends Component{
 
     render(){
         return(
-            <div className="city-container">
+            <div>
+                <Header />
                 <CityList cityData={this.state.cityData} updateCityIndex={this.updateCityIndex}/>
-                <CityShow cityData = {this.state.cityData[this.state.categoryIndex]}/> {/* top right, uses one city id */}
-            </div>
+                {/* <CityShow cityData = {this.state.cityData[this.state.categoryIndex]}/>  */}
+            </div>           
         )
     }
 }
     
-export default CityIndex
+export default CityContainer;
 
+
+               
 

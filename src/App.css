@@ -1,8 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+
+
+
+
 .App {
   text-align: center;
 }
-.city-container{
+/* .city-container{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+} */
+
+
+/* HOME PAGE */
+.homepage-container{
+  background-image: url('./images/wayfarer-landingpage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
+
+.homepage-title {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 60px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Krona One'
+}
+
+.homepage-text,
+.homepage-text-one,
+.homepage-text-two {
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat'
+}
+.homepage-text-one {
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.homepage-text-two {
+  position: absolute;
+  top: 80%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* NEEERRRAJJJJJ */

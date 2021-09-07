@@ -1,8 +1,14 @@
+import {Link} from 'react-router-dom'
+
 function Homepage(){
     return(
-        <div>
-            <h1>Welcome to the Homepage</h1>
-            
+        <div className = "homepage-container">
+            <Link to = '/about'>
+                <h1 className = "homepage-title">Gypsy</h1>
+            </Link>
+            <h3 className = "homepage-text">roam</h3>
+            <h3 className = "homepage-text-one">explore</h3>
+            <h3 className = "homepage-text-two">discover</h3>
         </div>
     )
 }
