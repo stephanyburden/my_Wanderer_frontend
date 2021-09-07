@@ -1,6 +1,7 @@
 import React from 'react';
 import CityModel from '../models/CityModel';
 import CreatePostForm from '../components/CreatePostForm.jsx'
+import PostList from '../components/PostList.jsx'
 
 class CityShowPage extends React.Component {
     state = {
@@ -20,32 +21,63 @@ class CityShowPage extends React.Component {
             })
         })
     }
-    createPost = (post, cityID)=> {
-        
+    createPost = (post, cityID)=> {        
         CityModel.newPost(cityID, post).then((res) => {
             let resPosts = this.state.posts    
             resPosts.push(res)
             this.setState({
                 posts: resPosts
+            })            
+        })        
+    }
+
+    deletePost = (cityId, postID)=>{
+        console.log("deleting...")
+        console.log(postID)
+        console.log("cityid is")
+        console.log(cityId)
+        CityModel.deletePost(cityId,postID).then((res)=>{
+            console.log("res is")
+            console.log(res)
+            let currentPosts = this.state.posts
+            let updatedPosts= currentPosts.filter((post)=>{
+                return post._id !== res._id
             })
-            
+            this.setState({posts:updatedPosts})
+        }).catch((err)=>{
+            console.log(err)
         })
-        
+    }
+    updatePost = (cityId,postID,post)=>{
+        CityModel.updatePost(cityId,postID,post)
+            .then((res)=>{
+                console.log("res is ")
+                console.log(res)
+                let updatePostList = this.state.posts
+                let index = updatePostList.findIndex((p)=>{
+                    return p._id === res._id
+                }) 
+                console.log(index)
+                updatePostList[index]=res
+                this.setState({posts:updatePostList})
+            }).catch((err)=>{
+                console.log(err)
+            })
     }
     
     render() {
-        const allPosts = this.state.posts.map((onePost, idx) => {
-            return <li key={idx}>
-                <h4>{onePost.title}</h4>
-                <p>{onePost.content}</p>
-            </li>
-        })
+        
         return (
             <div>
                 <h3>{this.state.name}</h3>
                 <img src={this.state.picture} alt="" />
                 <CreatePostForm cityID={this.props.match.params.cityId}createPost={this.createPost}/>
-                {allPosts}
+                <PostList
+                posts={this.state.posts}
+                cityID={this.props.match.params.cityId}
+                deletePost={this.deletePost}
+                updatePost={this.updatePost}
+                />
             </div>
         )
     }
