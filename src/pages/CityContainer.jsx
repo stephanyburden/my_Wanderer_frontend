@@ -36,12 +36,9 @@ class CityIndex extends Component{
 
     render(){
         return(
-            <div>
-                <div>
-                    <CityList cityData={this.state.cityData} updateCityIndex={this.updateCityIndex}/>
-                </div>
+            <div className="city-container">
+                <CityList cityData={this.state.cityData} updateCityIndex={this.updateCityIndex}/>
                 <CityShow cityData = {this.state.cityData[this.state.categoryIndex]}/> {/* top right, uses one city id */}
-            
             </div>
         )
     }
@@ -50,4 +47,3 @@ class CityIndex extends Component{
 export default CityIndex
 
 
-{/* <CityPosts/> bottom right, uses one city's posts */} 
