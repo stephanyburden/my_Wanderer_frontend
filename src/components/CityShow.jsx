@@ -1,4 +1,5 @@
 import Post from "./Post"
+import Header from "./Header"
 
 
 function CityShow(props) {

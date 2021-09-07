@@ -2,6 +2,7 @@ import React from 'react';
 import CityModel from '../models/CityModel';
 import CreatePostForm from '../components/CreatePostForm.jsx'
 import PostList from '../components/PostList.jsx'
+import Header from '../components/Header';
 
 class CityShowPage extends React.Component {
     state = {
@@ -69,6 +70,7 @@ class CityShowPage extends React.Component {
         
         return (
             <div>
+                <Header />
                 <h3>{this.state.name}</h3>
                 <img src={this.state.picture} alt="" />
                 <CreatePostForm cityID={this.props.match.params.cityId}createPost={this.createPost}/>
