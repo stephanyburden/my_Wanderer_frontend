@@ -20,10 +20,9 @@ class CreatePostForm extends Component {
   onFormSubmit = (event) => {
     event.preventDefault();
     let newPost = {
-        title:this.state.title,
-        content:this.state.content
+        "title":this.state.title,
+        "content":this.state.content
     }
-    console.log(newPost)
     this.props.createPost(newPost,this.props.cityID);
     this.setState({
       title:"",

@@ -13,8 +13,6 @@ class CityShowPage extends React.Component {
         const cityId = this.props.match.params.cityId
 
         CityModel.showCity(cityId).then((data) => {
-            console.log("city show data")
-            console.log(data)
             this.setState({
                 name: data.name,
                 picture: data.picture,
@@ -26,10 +24,6 @@ class CityShowPage extends React.Component {
         
         CityModel.newPost(cityID, post).then((res) => {
             let resPosts = this.state.posts    
-            console.log("resPosts=")
-            console.log(resPosts)
-            console.log("res is")
-            console.log(res.data)
             resPosts.push(res)
             this.setState({
                 posts: resPosts
@@ -48,7 +42,6 @@ class CityShowPage extends React.Component {
         })
         return (
             <div>
-                <h1>yeah this work</h1>
                 <h3>{this.state.name}</h3>
                 <img src={this.state.picture} alt="" />
                 <CreatePostForm cityID={this.props.match.params.cityId}createPost={this.createPost}/>

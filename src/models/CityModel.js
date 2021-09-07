@@ -12,10 +12,12 @@ class CityModel{
     static newPost(cityId,post){
         return fetch(`${url}/${cityId}/posts`,{
             method:'POST',
-            body:post,
-            headers: new Headers()
+            body: JSON.stringify(post),
+            headers: {
+                'Content-Type': 'application/json',
+              }
         }).then((response)=>{
-            console.log(response.json)
+           
             return response.json()
         })
         .catch((err)=>{
