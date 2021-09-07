@@ -20,17 +20,14 @@ class CityShowPage extends React.Component {
             })
         })
     }
-    createPost = (post, cityID)=> {
-        
+    createPost = (post, cityID)=> {        
         CityModel.newPost(cityID, post).then((res) => {
             let resPosts = this.state.posts    
             resPosts.push(res)
             this.setState({
                 posts: resPosts
-            })
-            
-        })
-        
+            })            
+        })        
     }
     
     render() {
