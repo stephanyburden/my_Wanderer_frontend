@@ -1,14 +1,21 @@
 .grid-wrapper{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #f4f4f4;
+  width: 100%;
+  background-color: #1e252d;
 }
 .grid-body {
-margin:20px auto;
+margin:0 auto;
 display: grid;
 max-width: 70%;
-grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(16%, 25%));
 grid-gap: 1em;
+background-color:white;
+width: calc(100% - 4rem);
+max-width: 72rem;
+justify-content:space-around;
+align-items: center;
+
+
+
 }
 
 
@@ -22,7 +29,7 @@ line-height: 0;
 overflow: hidden;
 }
 
-.content-img .movie-img {
+.content-img .city-img {
 filter: blur(0px);
 transition: filter 0.3s ease-in;
 transform: scale(1.1);

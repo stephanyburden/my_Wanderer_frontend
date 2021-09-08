@@ -15,14 +15,14 @@ function CityList(props) {
     const allCities = props.cityData.map((oneCity, idx) => {
         return (
             <div className="card" key={idx}>
-                <article class="content">
-                    <div class="content-img">
+                <article className="content">
+                    <div className="content-img">
                         <Link to={`cities/${oneCity._id}`}>
-                            <img src={oneCity.picture} />
+                            <img className="city-img" src={oneCity.picture} />
                         </Link>
                     </div>
-                    <div class="context-text">
-                        <h3 class="title">
+                    <div className="context-text">
+                        <h3 className="title">
                             {oneCity.name}
                         </h3>
                     </div>

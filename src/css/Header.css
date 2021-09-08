@@ -18,3 +18,75 @@
     padding: 0 5rem 0 5rem;
     
 }
+
+.btn {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .nav-btn {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .nav-btn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .nav-btn:before,
+  .nav-btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #1e252d;
+    transition: all 0.3s ease;
+  }
+  .nav-btn:before {
+    height: 0%;
+    width: 2px;
+  }
+  .nav-btn:after {
+    width: 0%;
+    height: 2px;
+  }
+  .nav-btn:hover:before {
+    height: 100%;
+  }
+  .nav-btn:hover:after {
+    width: 100%;
+  }
+  .nav-btn span:before,
+  .nav-btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #1e252d;
+    transition: all 0.3s ease;
+  }
+  .nav-btn span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .nav-btn span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .nav-btn span:hover:before {
+    height: 100%;
+  }
+  .nav-btn span:hover:after {
+    width: 100%;
+  }

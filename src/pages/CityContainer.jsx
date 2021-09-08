@@ -1,8 +1,7 @@
 import CityList from '../components/CityList.jsx'
 import {Component} from 'react'
 import CityModel from '../models/CityModel.js'
-import CityShow from '../components/CityShow.jsx'
-import Header from '../components/Header.jsx'
+
 
 
 class CityContainer extends Component{
@@ -38,7 +37,6 @@ class CityContainer extends Component{
     render(){
         return(
             <div>
-                <Header />
                 <CityList cityData={this.state.cityData} updateCityIndex={this.updateCityIndex}/>
                 {/* <CityShow cityData = {this.state.cityData[this.state.categoryIndex]}/>  */}
             </div>           
