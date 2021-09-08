@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../css/Homepage.css'
+import '../css/CityList.css'
 
 function CityList(props) {
 
@@ -14,30 +14,32 @@ function CityList(props) {
     //to update that state
     const allCities = props.cityData.map((oneCity, idx) => {
         return (
-            <article>
-                <div className="city-cards" key={idx}>
-                    <li
-                        
-                        onClick={() => handleCityClick(idx)}
-                    >
-                        <h4>{oneCity.name}</h4>
-                        <img src={oneCity.picture}></img>
-                    </li>
-                    <Link  to={`cities/${oneCity._id}`}>
-                        View City
-                    </Link>
-
-                </div>
-
-            </article>
+            <div className="card" key={idx}>
+                <article className="content">
+                    <div className="content-img">
+                        <Link to={`cities/${oneCity._id}`}>
+                            <img className="city-img" src={oneCity.picture} />
+                        </Link>
+                    </div>
+                    <div className="context-text">
+                        <h3 className="title">
+                            {oneCity.name}
+                        </h3>
+                    </div>
+                </article>
+            </div>
 
         )
     })
-    return (
-        <div>
+        
+return (
+    <div className="grid-wrapper">
+        <div className="grid-body">
             {allCities}
         </div>
-    )
+
+    </div>
+)
 }
 
 export default CityList
