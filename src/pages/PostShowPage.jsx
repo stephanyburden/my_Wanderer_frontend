@@ -27,11 +27,16 @@ class PostShowPage extends React.Component {
         return (
             <div className="postshow-body">
                 <Header className="postshow-header" />
+                <br />
+                <br />
+                <br />
                 <div className="postshow-content" >
                     <h3 className="postshow-title">{this.state.title}</h3>
 
                     <p>{this.state.content}</p>
                 </div>
+                <br />
+                <br />
             </div>
         )
     }
