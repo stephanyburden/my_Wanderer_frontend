@@ -1,7 +1,6 @@
 import { Component } from "react";
 import EditForm from "./EditForm";
 import Post from './Post.jsx'
-import { Link } from "react-router-dom";
 class SinglePost extends Component {
     state = {
         formStyle: {
