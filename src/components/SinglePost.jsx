@@ -1,5 +1,9 @@
 import { Component } from "react";
 import EditForm from "./EditForm";
+import '../css/CityShowPage.css';
+
+
+import Post from './Post.jsx'
 class SinglePost extends Component {
     state = {
         formStyle: {
@@ -19,24 +23,22 @@ class SinglePost extends Component {
         return (
             <li data-post-index={this.props.post._id}>
                 <div>
-                    <h6>
-                        {this.props.post.title}
-                    </h6>
-                    <p>
+                <Post onePost = {this.props.post} cityId = {this.props.cityID}/>
+                    <p className = "singlepost-content">
                         {this.props.post.content}
                     </p>
-                    <p
-                        className='edit'
-                        onClick={this.toggleBodyForm}
-                    >
-                        Edit
-                    </p>
-                    <p
-                        className='remove'
-                        onClick={this.deleteClickedPost}
-                    >
-                        Remove Post
-                    </p>
+                        <span
+                            className='edit singlepost-button'
+                            onClick={this.toggleBodyForm}
+                        >
+                            Edit
+                        </span>
+                        <span
+                            className='remove singlepost-button'
+                            onClick={this.deleteClickedPost}
+                        >
+                            Delete
+                        </span>
                 </div>
                 <EditForm
                     post={this.props.post}

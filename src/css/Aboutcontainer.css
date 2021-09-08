@@ -1,130 +1,150 @@
 #wrapper {
-
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    background-color: #1e252d;
-    font-family: "Merriweather", Georgia, serif;
-            font-weight: 300;
-            font-size: 1rem;
-            line-height: 2.375;
+position: relative;
+z-index: 1;
+overflow: hidden;
+background-color: #1e252d;
+font-family: "Merriweather", Georgia, serif;
+font-weight: 300;
+font-size: 1rem;
+line-height: 2.375;
 }
 
 #main {
-    background-color: #ffffff;
-    position: relative;
-    margin: 0 auto;
-    width: calc(100% - 4rem);
-    max-width: 72rem;
-    z-index: 2;
+background-color: #ffffff;
+position: relative;
+margin: 0 auto;
+width: calc(100% - 4rem);
+max-width: 72rem;
+z-index: 2;
 }
 #main > * {
-    padding: 0rem 4rem 0rem 4rem ;
-    border-top: solid 2px #eeeeee;
-    margin: 0;
+padding: 0rem 4rem 0rem 4rem ;
+border-top: solid 2px #eeeeee;
+margin: 0;
 }
 #main > .post {
-    padding: 8rem 8rem 6rem 8rem ;
+padding: 8rem 8rem 6rem 8rem ;
 }
 #main > .post header.major > .date {
-    margin-top: -2rem;
+margin-top: -2rem;
 }
 
 #main > .post header.major > h1, #main > .post header.major h2 {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin: 0 0 2rem 0;
+font-size: 4rem;
+line-height: 1.1;
+margin: 0 0 2rem 0;
 }
 .image {
-    border: 0;
-    display: inline-block;
-    position: relative;
+border: 0;
+display: inline-block;
+position: relative;
+border-radius: 0.5rem;
 }
 
-    .image img {
-        display: block;
-    }
+.image img {
+display: block;
+}
 
-    .image.left, .image.right {
-        max-width: 40%;
-    }
+.image.left, .image.right {
+max-width: 40%;
+}
 
-        .image.left img, .image.right img {
-            width: 100%;
-        }
+.image.left img, .image.right img {
+    width: 100%;
+}
 
-    .image.left {
-        float: left;
-        margin: 0 2rem 2rem 0;
-        top: 0.75rem;
-    }
+.image.left {
+float: left;
+margin: 0 2rem 2rem 0;
+top: 0.75rem;
+}
 
-    .image.right {
-        float: right;
-        margin: 0 0 2rem 2rem;
-        top: 0.75rem;
-    }
+.image.right {
+float: right;
+margin: 0 0 2rem 2rem;
+top: 0.75rem;
+}
 
-    .image.fit {
-        display: block;
-        margin: 2.5rem 0;
-        width: 100%;
-    }
+.image.fit {
+display: block;
+margin: 2.5rem 0;
+width: 100%;
+}
 
-        .image.fit:first-child {
-            margin-top: 0;
-        }
+.image.fit:first-child {
+    margin-top: 0;
+}
 
-        .image.fit img {
-            width: 100%;
-        }
+.image.fit img {
+    width: 100%;
+}
 
-    .image.main {
-        display: block;
-        margin: 4rem 0;
-        width: 100%;
-        
-    }
+.image.main {
+display: block;
+margin: 4rem 0;
+width: 100%;
 
-        .image.main:first-child {
-            margin-top: 0;
-        }
+}
 
-        .image.main img {
-            width: 100%;
-        }
+.image.main:first-child {
+    margin-top: 0;
+}
 
-    @media screen and (max-width: 736px) {
+.image.main img {
+    width: 100%;
+}
 
-        .image.fit {
-            margin: 2rem 0;
-        }
+@media screen and (max-width: 736px) {
 
-        .image.main {
-            margin: 2rem 0;
-        }
+.image.fit {
+    margin: 2rem 0;
+}
 
-    }
+.image.main {
+    margin: 2rem 0;
+}
+
+}
 
 a.image {
-    overflow: hidden;
+overflow: hidden;
 }
 
-    a.image img {
-        -moz-transition: -moz-transform 0.2s ease-out;
-        -webkit-transition: -webkit-transform 0.2s ease-out;
-        -ms-transition: -ms-transform 0.2s ease-out;
-        transition: transform 0.2s ease-out;
-        
-        object-fit: cover;
-        max-height:60vh;
-    }
+a.image img {
+-moz-transition: -moz-transform 0.2s ease-out;
+-webkit-transition: -webkit-transform 0.2s ease-out;
+-ms-transition: -ms-transform 0.2s ease-out;
+transition: transform 0.2s ease-out;
 
-    a.image:hover img {
-        -moz-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
-    }
+object-fit: cover;
+max-height:60vh;
+}
 
-    
+a.image:hover img {
+-moz-transform: scale(1.05);
+-webkit-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+}
+.btn-main {
+padding: 10px 50px;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+background: transparent;
+outline: none !important;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+}
+
+.btn-1 {
+border: 2px solid #000;
+}
+.btn-1:hover {
+background: #000;
+color: #fff;
+}
+.btn-1:active {
+top: 2px;
+}

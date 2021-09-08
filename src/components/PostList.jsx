@@ -14,6 +14,7 @@ const PostList = (props)=>{
     })
     return (
         <ul>
+            <h2 className = "section-caption">Adventures</h2>
             {posts}
         </ul>
     )
