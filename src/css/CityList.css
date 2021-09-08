@@ -1,26 +1,76 @@
-article {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    display: flex;
-    justify-content: space-around;
-    box-sizing: inherit;
-  }
+.grid-wrapper{
+  width: 100%;
+  background-color: #1e252d;
+}
+.grid-body {
+margin:0 auto;
+display: grid;
+max-width: 70%;
+grid-template-columns: repeat(auto-fill, minmax(16%, 25%));
+grid-gap: 1em;
+background-color:white;
+width: calc(100% - 4rem);
+max-width: 72rem;
+justify-content:space-around;
+align-items: center;
+
+
+
+}
+
+
+/* hover styles */
+.content {
+position: relative;
+}
+
+.content-img {
+line-height: 0;
+overflow: hidden;
+}
+
+.content-img .city-img {
+filter: blur(0px);
+transition: filter 0.3s ease-in;
+transform: scale(1.1);
+}
+
+.context-text {
+font-size: 1.5em;
+font-weight: bold;
+text-decoration: none;
+z-index: 1;
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+transition: opacity .5s;
+background: rgba(85, 87, 100, 0.4);
+color: #f4f4f4;
+pointer-events: none;
+text-align: center;
+
+/* position the text in t’ middle*/
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.title{
+  position: relative;
   
-  
-  .city-cards {
-    background-size: cover;
-    border-color: #eeeeee;
-    border-left-width: 2px;
-    border-style: solid;
-    border-top-width: 2px;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    margin: 40px;
-    flex-flow: row wrap;
-  }
-  
+}
+.copy{
+  position: relative;
+ 
+}
+
+.content:hover .context-text {
+opacity: 1;
+}
+
+.content:hover .content-img .movie-img {
+filter: blur(2px);
+}
