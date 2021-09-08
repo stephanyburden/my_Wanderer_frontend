@@ -1,4 +1,5 @@
 /* City Show Page */
+
 .cityshow-body {
     margin: -10px;
     background-image: url('../images/more-amsterdam.jpg');
@@ -19,7 +20,7 @@
 }
 
 .cityshow-title {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     padding: 30px;
     color: #8C0D2F;
 }
@@ -42,7 +43,7 @@
     padding: 10px;
     width: 75%;
     background: #BF925A90;
-
+    border-radius: 5px;
 }
 
 ::placeholder {
@@ -57,27 +58,49 @@
 }
 
 .createpost-btn {
-    width: 40%;
+    width: 20%;
     color: #0C1726;
     font-weight: bold;
     font-size: 16px;
     padding: 5px;
+    border-radius: 5px;
 }
 
 
 /* SinglePost */
+li {
+    list-style: none;
+}
+
+.singlepost-content {
+    font-size: 1.4rem;
+}
+
+.singlepost-button {
+    font-size: 16px;
+    padding: 12px;
+    text-decoration: underline;
+    color:#8C0D2F;
+    font-weight: bold;
+}
+
+.singlepost-button:hover {
+    color: white;
+}
+
+
 /* Post */
-.post-caption {
-    font-size: 1.6rem;
+.section-caption {
+    font-size: 2rem;
     color: #8C0D2F;
 }
 
 .post-title {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 .post-title:hover {
-    color: #8C0D2F;
+    color: white;
 }
 
 a {
