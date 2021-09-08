@@ -1,6 +1,10 @@
 .grid-wrapper{
   width: 100%;
-  background-color: #1e252d;
+  height: 1500px;
+  position: relative;
+  
+
+  
 }
 .grid-body {
 margin:0 auto;
@@ -8,16 +12,13 @@ display: grid;
 max-width: 70%;
 grid-template-columns: repeat(auto-fill, minmax(16%, 25%));
 grid-gap: 1em;
-background-color:white;
+background-color: #55576466;
 width: calc(100% - 4rem);
 max-width: 72rem;
 justify-content:center;
 align-items: center;
 
-
-
 }
-
 
 /* hover styles */
 .content {
@@ -48,7 +49,7 @@ top: 0;
 left: 0;
 opacity: 0;
 transition: opacity .5s;
-background: rgba(85, 87, 100, 0.4);
+background: #55576466;
 color: #f4f4f4;
 pointer-events: none;
 text-align: center;
