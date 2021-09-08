@@ -3,7 +3,7 @@ function CityTitle(){
     return(
         <div className="title-wrapper">
             <div className="title-container">
-                <h3 clasName="title-text">Popular Locations</h3>
+                <h3 className="title-text">Popular Locations</h3>
             </div>
         </div>
     )
