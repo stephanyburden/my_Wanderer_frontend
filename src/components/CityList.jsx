@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import '../css/CityList.css'
+import Header from '../components/Header'
 
 function CityList(props) {
 
@@ -14,30 +15,30 @@ function CityList(props) {
     //to update that state
     const allCities = props.cityData.map((oneCity, idx) => {
         return (
-            <div className="card" key={idx}>
-                <article className="content">
-                    <div className="content-img">
-                        <Link to={`cities/${oneCity._id}`}>
-                            <img className="city-img" src={oneCity.picture} />
-                        </Link>
-                    </div>
-                    <div className="context-text">
-                        <h3 className="title">
-                            {oneCity.name}
-                        </h3>
-                    </div>
-                </article>
-            </div>
-
+                <div className="card" key={idx}>
+                    <article className="content">
+                        <div className="content-img">
+                            <Link to={`cities/${oneCity._id}`}>
+                                <img className="city-img" src={oneCity.picture} />
+                            </Link>
+                        </div>
+                        <div className="context-text">
+                            <h3 className="title">
+                                {oneCity.name}
+                            </h3>
+                        </div>
+                    </article>
+                </div>
         )
     })
         
 return (
-    <div className="grid-wrapper">
-        <div className="grid-body">
-            {allCities}
+    <div>
+        <div className="grid-wrapper">
+            <div className="grid-body">
+                {allCities}
+            </div>
         </div>
-
     </div>
 )
 }
