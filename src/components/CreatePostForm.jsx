@@ -1,4 +1,6 @@
 import { Component } from 'react';
+import '../css/CityShowPage.css';
+
 
 class CreatePostForm extends Component {
   state = {
@@ -33,22 +35,31 @@ class CreatePostForm extends Component {
   render() {
     return (
       <div>
+        <br/>
+        <br/>
         <form onSubmit={this.onFormSubmit} >
-          <input  
+          <input 
+            className = "createpost-title"  
             onChange={this.onTitleInputChange} 
             type="text" 
-            placeholder="Title" 
+            placeholder="Name your adventure..." 
             value={this.state.title}
           />
-          <input  
+          <br/>
+          <br/>
+          <textarea
+            className = "createpost-textinput"  
             onChange={this.onContentInputChange} 
-            type="text" 
-            placeholder="Content" 
+            placeholder="Tell your story..." 
             value={this.state.content}
           />
-          
-          <button type="submit" className="btn">Create Post</button>
+          <br />
+          <br />
+          <button type="submit" className="btn createpost-btn">Share</button>
         </form>
+        <br />
+        <br />
+        <hr className = "cityshow-hr"/>
       </div>
     );
   };

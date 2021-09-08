@@ -1,0 +1,70 @@
+/* City Show Page */
+.cityshow-body {
+    margin: -10px;
+    background-image: url('../images/more-amsterdam.jpg');
+    /* we'll have to seed the data with background images??? how to get it to chagne */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #0C1726;
+}
+
+.cityshow-content {
+    background: #BFD1D980;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cityshow-title {
+    font-size: 2rem;
+    padding: 30px;
+}
+
+.cityshow-image {
+    width: 75%;
+}
+
+.cityshow-hr {
+    border: 2px solid #0C172690;
+    width: 90%;
+}
+
+
+/* Create Post Form */
+.createpost-title, 
+.createpost-textinput {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 75%;
+    background: #BF925A90;
+
+}
+
+::placeholder {
+    color: #0C1726;
+    font-size: 1rem;
+}
+
+
+.createpost-title:hover, 
+.createpost-textinput:hover {
+    background: #BF925A;
+}
+
+.createpost-btn {
+    width: 40%;
+    color: #0C1726;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+
+
+
+/* SinglePost */
