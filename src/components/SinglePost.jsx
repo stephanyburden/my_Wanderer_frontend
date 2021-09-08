@@ -1,5 +1,7 @@
 import { Component } from "react";
 import EditForm from "./EditForm";
+import Post from './Post.jsx'
+import { Link } from "react-router-dom";
 class SinglePost extends Component {
     state = {
         formStyle: {
@@ -19,9 +21,8 @@ class SinglePost extends Component {
         return (
             <li data-post-index={this.props.post._id}>
                 <div>
-                    <h6>
-                        {this.props.post.title}
-                    </h6>
+                <Post onePost = {this.props.post} cityId = {this.props.cityID}/>
+                  
                     <p>
                         {this.props.post.content}
                     </p>

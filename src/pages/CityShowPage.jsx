@@ -4,6 +4,7 @@ import CreatePostForm from '../components/CreatePostForm.jsx'
 import PostList from '../components/PostList.jsx'
 import Header from '../components/Header';
 
+
 class CityShowPage extends React.Component {
     state = {
         name: "",
