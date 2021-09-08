@@ -1,0 +1,18 @@
+.title-wrapper{
+    background-color:#1e252d;
+    width:100%;
+    
+    margin: 0px;
+}
+.title-container{
+    width: calc(100% - 4rem);
+    max-width: 72rem;
+    padding: 0px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem 0 1rem 0;
+}
+.title-text{
+    padding: 0px;
+    margin: 0px;
+}
