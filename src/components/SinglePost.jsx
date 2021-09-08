@@ -1,5 +1,9 @@
 import { Component } from "react";
 import EditForm from "./EditForm";
+import '../css/CityShowPage.css';
+
+
+
 class SinglePost extends Component {
     state = {
         formStyle: {

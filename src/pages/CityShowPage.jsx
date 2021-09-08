@@ -3,6 +3,7 @@ import CityModel from '../models/CityModel';
 import CreatePostForm from '../components/CreatePostForm.jsx'
 import PostList from '../components/PostList.jsx'
 import Header from '../components/Header';
+import '../css/CityShowPage.css';
 
 class CityShowPage extends React.Component {
     state = {
@@ -67,19 +68,27 @@ class CityShowPage extends React.Component {
     }
     
     render() {
-        
         return (
-            <div>
-                <Header />
-                <h3>{this.state.name}</h3>
-                <img src={this.state.picture} alt="" />
-                <CreatePostForm cityID={this.props.match.params.cityId}createPost={this.createPost}/>
-                <PostList
-                posts={this.state.posts}
-                cityID={this.props.match.params.cityId}
-                deletePost={this.deletePost}
-                updatePost={this.updatePost}
-                />
+            <div className = "cityshow-body">
+                <Header className = "cityshow-header"/>
+                <br />
+                <br />
+                <br />
+                <div className = "cityshow-content">
+                    <h3 className = "cityshow-title">{this.state.name}</h3>
+                    <img className = "cityshow-image" src={this.state.picture} alt=""  />
+                    <br />
+                    <br />
+                    <br />
+                    <hr className = "cityshow-hr"/>
+                    <CreatePostForm cityID={this.props.match.params.cityId}createPost={this.createPost}/>
+                    <PostList
+                    posts={this.state.posts}
+                    cityID={this.props.match.params.cityId}
+                    deletePost={this.deletePost}
+                    updatePost={this.updatePost}
+                    />
+                </div>
             </div>
         )
     }
