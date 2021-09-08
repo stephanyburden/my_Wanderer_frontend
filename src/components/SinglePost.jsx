@@ -4,6 +4,7 @@ import '../css/CityShowPage.css';
 
 
 
+import Post from './Post.jsx'
 class SinglePost extends Component {
     state = {
         formStyle: {
@@ -23,9 +24,8 @@ class SinglePost extends Component {
         return (
             <li data-post-index={this.props.post._id}>
                 <div>
-                    <h6>
-                        {this.props.post.title}
-                    </h6>
+                <Post onePost = {this.props.post} cityId = {this.props.cityID}/>
+                  
                     <p>
                         {this.props.post.content}
                     </p>
