@@ -36,6 +36,7 @@ class CreatePostForm extends Component {
     return (
       <div>
         <br/>
+        <br/>
         <form onSubmit={this.onFormSubmit} >
           <input 
             className = "createpost-title"  
@@ -44,8 +45,8 @@ class CreatePostForm extends Component {
             placeholder="Name your adventure..." 
             value={this.state.title}
           />
-          <br />
-          <br />
+          <br/>
+          <br/>
           <textarea
             className = "createpost-textinput"  
             onChange={this.onContentInputChange} 
@@ -54,7 +55,7 @@ class CreatePostForm extends Component {
           />
           <br />
           <br />
-          <button type="submit" className="btn createpost-btn">Cement It</button>
+          <button type="submit" className="btn createpost-btn">Share</button>
         </form>
         <br />
         <br />
