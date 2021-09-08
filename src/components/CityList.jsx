@@ -34,7 +34,6 @@ function CityList(props) {
         
 return (
     <div>
-        <Header />
         <div className="grid-wrapper">
             <div className="grid-body">
                 {allCities}
