@@ -12,15 +12,16 @@
 
 .cityshow-content {
     background: #BFD1D980;
-    width: 60%;
+    width: 70%;
     height: auto;
     margin: 0 auto;
     padding: 10px;
 }
 
 .cityshow-title {
-    font-size: 2rem;
+    font-size: 2.1rem;
     padding: 30px;
+    color: #8C0D2F;
 }
 
 .cityshow-image {
@@ -29,7 +30,7 @@
 
 .cityshow-hr {
     border: 2px solid #0C172690;
-    width: 90%;
+    width: 95%;
 }
 
 
@@ -64,7 +65,30 @@
 }
 
 
-
-
-
 /* SinglePost */
+/* Post */
+.post-caption {
+    font-size: 1.6rem;
+    color: #8C0D2F;
+}
+
+.post-title {
+    font-size: 1.3rem;
+}
+
+.post-title:hover {
+    color: #8C0D2F;
+}
+
+a {
+    text-decoration: none;
+    color: #0C1726;
+}
+
+a:visited {
+    color: #0C1726;
+}
+
+
+
+/* PostShowPage */
