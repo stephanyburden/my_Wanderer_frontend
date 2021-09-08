@@ -3,13 +3,13 @@ import CityContainer from "../pages/CityContainer.jsx";
 import Homepage from '../pages/Homepage.jsx';
 import PostShowPage from '../pages/PostShowPage.jsx';
 import CityShowPage from '../pages/CityShowPage.jsx';
-import AboutContainer from "../pages/AboutContainer.jsx";
+import AboutPage from "../pages/AboutPage.jsx";
 
 function Routes() {
     return (
         <Switch>
             <Route exact path='/' component={Homepage} />
-            <Route exact path='/about' component={AboutContainer} />
+            <Route exact path='/about' component={AboutPage} />
             <Route exact path='/cities' component={CityContainer} />
             <Route exact path = '/cities/:cityId/' render={(props) => <CityShowPage {...props} />} />
             <Route exact path = '/cities/:cityId/posts/:postsId' render={(props) => <PostShowPage {...props} />} />
