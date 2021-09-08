@@ -113,5 +113,28 @@ a:visited {
 }
 
 
+/* Edit Form */
+.editpost-title,
+.editpost-textinput {
+    margin: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 75%;
+    background: #BF925A90;
+    border-radius: 5px;
+}
 
-/* PostShowPage */
+.editpost-title:hover, 
+.editpost-textinput:hover {
+    background: #BF925A;
+}
+
+.createedit-btn {
+    width: 20%;
+    color: #0C1726;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}

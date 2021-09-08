@@ -32,20 +32,21 @@ class EditForm extends Component {
         return (
             <div style={this.props.style}>
                 <form onSubmit={this.onFormSubmit} >
-                    <input
+                    <input 
+                        className = "editpost-title"
                         onChange={this.onTitleInputChange}
                         type="text"
                         placeholder="Title"
                         value={this.state.title}
                     />
-                    <input
+                    <textarea
+                        className = "editpost-textinput"
                         onChange={this.onContentInputChange}
-                        type="text"
                         placeholder="Content"
                         value={this.state.content}
                     />
 
-                    <button type="submit" className="btn">Update Post</button>
+                    <button type="submit" className="btn createedit-btn">Update Post</button>
                 </form>
             </div>
 
