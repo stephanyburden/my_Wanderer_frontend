@@ -3,7 +3,6 @@ import EditForm from "./EditForm";
 import '../css/CityShowPage.css';
 
 
-
 import Post from './Post.jsx'
 class SinglePost extends Component {
     state = {
@@ -25,22 +24,21 @@ class SinglePost extends Component {
             <li data-post-index={this.props.post._id}>
                 <div>
                 <Post onePost = {this.props.post} cityId = {this.props.cityID}/>
-                  
-                    <p>
+                    <p className = "singlepost-content">
                         {this.props.post.content}
                     </p>
-                    <p
-                        className='edit'
-                        onClick={this.toggleBodyForm}
-                    >
-                        Edit
-                    </p>
-                    <p
-                        className='remove'
-                        onClick={this.deleteClickedPost}
-                    >
-                        Remove Post
-                    </p>
+                        <span
+                            className='edit singlepost-button'
+                            onClick={this.toggleBodyForm}
+                        >
+                            Edit
+                        </span>
+                        <span
+                            className='remove singlepost-button'
+                            onClick={this.deleteClickedPost}
+                        >
+                            Delete
+                        </span>
                 </div>
                 <EditForm
                     post={this.props.post}

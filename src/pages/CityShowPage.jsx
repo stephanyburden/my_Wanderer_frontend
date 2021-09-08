@@ -82,7 +82,9 @@ class CityShowPage extends React.Component {
                     <br />
                     <br />
                     <hr className = "cityshow-hr"/>
+                    <h2 className = "section-caption">City Stories</h2>
                     <CreatePostForm cityID={this.props.match.params.cityId}createPost={this.createPost}/>
+                 
                     <PostList
                     posts={this.state.posts}
                     cityID={this.props.match.params.cityId}
@@ -90,6 +92,8 @@ class CityShowPage extends React.Component {
                     updatePost={this.updatePost}
                     />
                 </div>
+                <br />
+                <br />
             </div>
         )
     }
