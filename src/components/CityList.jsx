@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import '../css/Homepage.css'
+
 function CityList(props) {
 
     //updates props, which triggers calling it on our city container page
@@ -12,18 +14,22 @@ function CityList(props) {
     //to update that state
     const allCities = props.cityData.map((oneCity, idx) => {
         return (
-            <div key={idx}>
-                <li
-                    
-                    onClick={() => handleCityClick(idx)}
-                >
-                    {oneCity.name}
-                </li>
-                <Link  to={`cities/${oneCity._id}`}>
-                    View City
-                </Link>
+            <article>
+                <div className="city-cards" key={idx}>
+                    <li
+                        
+                        onClick={() => handleCityClick(idx)}
+                    >
+                        <h4>{oneCity.name}</h4>
+                        <img src={oneCity.picture}></img>
+                    </li>
+                    <Link  to={`cities/${oneCity._id}`}>
+                        View City
+                    </Link>
 
-            </div>
+                </div>
+
+            </article>
 
         )
     })

@@ -1,0 +1,27 @@
+article {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: inherit;
+  }
+  
+  
+  .city-cards {
+   
+    background-size: cover;
+    border-color: #eeeeee;
+    border-left-width: 2px;
+    border-style: solid;
+    border-top-width: 2px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+    flex-flow: row wrap;
+  }
+  
