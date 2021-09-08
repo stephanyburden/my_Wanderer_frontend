@@ -19,7 +19,7 @@ function CityList(props) {
                     <article className="content">
                         <div className="content-img">
                             <Link to={`cities/${oneCity._id}`}>
-                                <img className="city-img" src={oneCity.picture} />
+                                <img width="200px" height="200px" className="city-img" src={oneCity.picture} />
                             </Link>
                         </div>
                         <div className="context-text">
