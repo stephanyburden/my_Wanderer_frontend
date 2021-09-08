@@ -1,5 +1,6 @@
 import React from 'react';
 import CityModel from '../models/CityModel';
+import Header from '../components/Header';
 
 class PostShowPage extends React.Component {
     state = {
@@ -24,6 +25,7 @@ class PostShowPage extends React.Component {
     render() {
         return (
             <div>
+                <Header />
                 <h1>Post Show Page</h1>
                 <h3>{this.state.title}</h3>
                 <p>{this.state.content}</p>
