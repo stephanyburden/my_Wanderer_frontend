@@ -2,11 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 
 .App {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 /* .city-container{
   display: flex;
