@@ -1,9 +1,9 @@
 import {Link} from 'react-router-dom'
-
+import '../css/Header.css'
 function Header(){
     return(
         <header>
-            <nav>
+            <nav className="page-header">
                 <ul>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to = '/about'>About</Link></li>

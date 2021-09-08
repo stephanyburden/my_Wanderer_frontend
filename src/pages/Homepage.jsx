@@ -1,15 +1,13 @@
-import {Link} from 'react-router-dom'
+
+import Banner from '../components/Banner.jsx'
+import AboutContainer from './AboutContainer.jsx'
 import '../css/CityList.css'
 
 function Homepage(){
     return(
-        <div className = "homepage-container">
-            <Link to = '/about'>
-                <h1 className = "homepage-title">Gypsy</h1>
-            </Link>
-            <h3 className = "homepage-text">roam</h3>
-            <h3 className = "homepage-text-one">explore</h3>
-            <h3 className = "homepage-text-two">discover</h3>
+        <div>
+            <Banner/>
+            <AboutContainer/>
         </div>
     )
 }

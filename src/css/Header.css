@@ -1,0 +1,20 @@
+.page-header{
+    color: #ffffff;
+    background: white;
+    height: 4rem;
+    line-height: 4rem;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: calc(100% - 4rem);
+    max-width: 72rem;
+    z-index: 2;
+}
+.page-header ul{
+    display:flex;    
+    margin: 0 0 2rem 0;
+}
+.page-header ul li{
+    padding: 0 5rem 0 5rem;
+    
+}
