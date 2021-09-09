@@ -16,9 +16,9 @@ class AboutContainer extends React.Component {
                     <section className="post">
                         <header className="major">
                             <h1>What is Wanderer?<br /></h1>
-                            <p> we like to jump off cliff and do crazy shit. Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-                                facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-                                amet nullam sed etiam veroeros.</p>
+                            <p> We're the place for the cliff divers. The dreamers. The lovers of other worlds that exist next to our own.<br />
+                                Through travel we believe you can become connected to your inner thrill-seeker and explorer. Creating your place in the vast, cultural experience that is the world,<br />
+                                 one wandering at a time.</p>
                         </header>
                         <a href="#" className="image main"><img src={AboutImage} alt="" /></a>
                         <Link to = '/about'><button className="btn-main btn-1"><span>About</span></button></Link>

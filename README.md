@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Wanderer
+We've created a bright, travel site that any wanderer can come take joy in and find community. Especially for those times when they are out in the world exploring away from their natural habitat and seeking to share adventures with like-minded individuals. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies Used
+* Trello - project planning
+* Figma - app design and mockups
+* Node.js
+* Javascript
+* Express
+* Mongoose & MongoDB
+* CSS
+* React
+    * React Carousel
+    * React Router 
+* Unsplash - picture library
 
-## Available Scripts
 
-In the project directory, you can run:
+## WireFrames
+![ERD Model & Route Flow]('readme_images/Project Wayfarer.jpeg')
+ERD Model & Route Flow
 
-### `npm start`
+![React Component Model]('readme_images/react_component_diagram.jpeg')
+React Component Model
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## User Stories
+### Who is the user?
+Our user is the budding or seasoned traveller who revels in exploring new places and cultures and wants to share it with the ever-growing travel community. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Existing Features
+* Visual-first landing page with multiple React components rendered over a parallax simulated background
+* Easy to navigate navbar that takes the user betweeen the home and about page
+* An all cities grid-implemented visual navigation, at the end of the landing page, that takes users to previously travelled cities
+* A city show page with:
+    * a picture of the city
+    * form to add a post 
+    * ability to view added posts for the city they've been created in
+    * ability to edit or delete old posts
+    * ability to click the post title and be taken to a post show page
+* A post show page that allows the user to view the post title and content
 
-### `npm test`
+## Planned Features
+If we continued to work on our project, we'd like to create solutions for the features listed below:
+* User Signup/Login
+* Adding Comments to Posts
+* Editing/Deleting Comments
+* Visual Map with markers of where the community has been
+* Form Validators
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Triumphs
+Being able to scroll through compnents on the landing page was a challenge that we were able to transform into a win, once we were able to implement it into our project. Being able to come together as a team the night before the project was due and bring a collective vision to life after a week of struggling, helped make the final product something we could be proud of. 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Challenges
+Being able to execute all our user experience goals within the time frame turned out to be a challenge due to learning the new React material and understanding how to best utilize it. It was also a challenge to figure out how to get all the components to render on the landing page to create a seamless user scroll experience. Lastly, since our app is a mostly visual experience, curating high quality photos that kept to the theme of the website proved to be more time-consuming than initially thought.
