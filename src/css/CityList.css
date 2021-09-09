@@ -15,7 +15,7 @@ grid-gap: 1em;
 background-color: #55576466;
 width: calc(100% - 4rem);
 max-width: 72rem;
-justify-content:center;
+justify-content:space-around;
 align-items: center;
 
 }
@@ -23,7 +23,6 @@ align-items: center;
 /* hover styles */
 .content {
 position: relative;
-width:100%
 }
 
 .content-img {
