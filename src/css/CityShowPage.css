@@ -18,22 +18,19 @@
     /* padding: 10px; */
     min-height:100vh;
     overflow: hidden;
-    border-top: solid 2px #dbd6d6;
+    border-top: solid 2px #DBD6D6;
     
 }
 
 .cityshow-title {
     font-size: 2.5rem;
-    color: #A64F1C;
+    color: black;
 }
 
-.cityshow-image {
-    /* width: 75%; */
-}
 
 .cityshow-hr {
-    border: 2px solid #0C172690;
-    width: 95%;
+    border: 1px solid #DBD6D6;
+    width: 100%;
 }
 
 
@@ -44,12 +41,12 @@
     outline: none;
     padding: 10px;
     width: 75%;
-    background: #BF925A90;
+    background: #E9D0D380;
     border-radius: 5px;
 }
 
 ::placeholder {
-    color: #0C1726;
+    color: black;
     font-size: 1rem;
     font-family: sans-serif;
 }
@@ -57,12 +54,12 @@
 
 .createpost-title:hover, 
 .createpost-textinput:hover {
-    background: #BF925A;
+    background: #E9D0D3;
 }
 
 .createpost-btn {
     width: 20%;
-    color: #0C1726;
+    color: black;
     font-weight: bold;
     font-size: 16px;
     padding: 5px;
@@ -84,7 +81,7 @@ li {
     font-size: 16px;
     padding: 12px;
     text-decoration: underline;
-    color: #A64F1C;
+    color: black;
     font-weight: bold;
 }
 
@@ -96,7 +93,7 @@ li {
 /* Post */
 .section-caption {
     font-size: 2rem;
-    color:  #A64F1C;;
+    color: black;
 }
 
 .post-title {
@@ -125,18 +122,18 @@ a:visited {
     outline: none;
     padding: 10px;
     width: 75%;
-    background: #BF925A90;
+    background: #E9D0D380;
     border-radius: 5px;
 }
 
 .editpost-title:hover, 
 .editpost-textinput:hover {
-    background: #BF925A;
+    background: #E9D0D3;
 }
 
 .createedit-btn {
     width: 20%;
-    color: #A64F1C;
+    color: black;
     font-weight: bold;
     font-size: 16px;
     padding: 5px;
