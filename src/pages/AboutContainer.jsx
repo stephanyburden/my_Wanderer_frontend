@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from '../components/Header'
 import '../css/Aboutcontainer.css'
-import AboutImage from '../images/aboutpage_bhutantemple.jpg'
+// import AboutImage from '../images/aboutpage_bhutantemple.jpg'
+import AboutImage from '../images/franck-charles-5OwvmNqjJ18-unsplash.jpg'
 import {Link} from 'react-router-dom'
 
 
@@ -14,7 +15,7 @@ class AboutContainer extends React.Component {
                 
                     <section className="post">
                         <header className="major">
-                            <h1>What is Gypsy?<br /></h1>
+                            <h1>What is Wanderer?<br /></h1>
                             <p> we like to jump off cliff and do crazy shit. Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
                                 facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
                                 amet nullam sed etiam veroeros.</p>

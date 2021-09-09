@@ -71,13 +71,14 @@ class CityShowPage extends React.Component {
     render() {
         return (
             <div className = "cityshow-body">
-                <Header className = "cityshow-header"/>
+                <br/>
                 <br />
+                <Header className = "cityshow-header"/>
                 <br />
                 <br />
                 <div className = "cityshow-content">
                     <h3 className = "cityshow-title">{this.state.name}</h3>
-                    <img className = "cityshow-image" src={this.state.picture} alt=""  />
+                    <img  className = "cityshow-image" src={this.state.picture} alt=""  />
                     <br />
                     <br />
                     <br />

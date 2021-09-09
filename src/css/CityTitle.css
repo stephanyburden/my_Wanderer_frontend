@@ -1,5 +1,5 @@
 .title-wrapper{
-    background-color:#1e252d;
+    /* background-color:#1e252d; */
     width:100%;
     
     margin: 0px;
@@ -9,7 +9,7 @@
     max-width: 72rem;
     padding: 0px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #ffffff80;
     padding: 1rem 0 1rem 0;
     border-top: solid 2px #eeeeee;
 }
