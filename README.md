@@ -17,9 +17,11 @@ We've created a bright, travel site that any wanderer can come take joy in and f
 
 ## WireFrames
 ![ERD Model & Route Flow](readme_images/Project Wayfarer.jpeg)
+
 ERD Model & Route Flow
 
 ![React Component Model](readme_images/react_component_diagram.jpeg)
+
 React Component Model
 
 ## User Stories
