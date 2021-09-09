@@ -74,8 +74,6 @@ class CityShowPage extends React.Component {
                 <br/>
                 <br />
                 <Header className = "cityshow-header"/>
-                <br />
-                <br />
                 <div className = "cityshow-content">
                     <h3 className = "cityshow-title">{this.state.name}</h3>
                     <img  className = "cityshow-image" src={this.state.picture} alt=""  />
@@ -93,8 +91,6 @@ class CityShowPage extends React.Component {
                     updatePost={this.updatePost}
                     />
                 </div>
-                <br />
-                <br />
             </div>
         )
     }
