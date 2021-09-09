@@ -62,7 +62,7 @@ color:crimson
   content: "";
   right: 0;
   top: 0;
-  background: #0b52a3;
+  background: #ffffff;
   transition: all 0.3s ease;
 }
 .nav-btn:before {

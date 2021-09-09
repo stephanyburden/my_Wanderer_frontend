@@ -2,7 +2,7 @@
 
 .postshow-body {
     margin: -10px;
-    background-image: url('../images/more-amsterdam.jpg');
+    background-image: url('/src/images/Ballon01.jpg');
     /* we'll have to seed the data with background images??? how to get it to chagne */
     background-repeat: no-repeat;
     background-position: center;
@@ -14,13 +14,15 @@
 }
 
 .postshow-content {
-    background: #BFD1D980;
-    width: 70%;
+    background: #ffffff80;
+    width: calc(100% - 4rem);
+    max-width: 72rem;
     height: auto;
     margin: 0 auto;
-    padding: 10px;
+    /* padding: 10px; */
     min-height:100vh;
     overflow: hidden;
+    border-top: solid 2px #eeeeee;
 }
 
 .postshow-title {

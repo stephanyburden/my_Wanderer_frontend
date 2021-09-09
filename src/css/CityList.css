@@ -15,7 +15,7 @@ grid-gap: 1em;
 background-color: #ffffff80;
 width: calc(100% - 4rem);
 max-width: 72rem;
-justify-content:center;
+justify-content:space-around;
 align-items: center;
 padding: 20px 0px;;
 
@@ -24,7 +24,6 @@ padding: 20px 0px;;
 /* hover styles */
 .content {
 position: relative;
-width:100%
 }
 
 .content-img {
