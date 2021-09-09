@@ -1,0 +1,123 @@
+/* post Show Page */
+
+.postshow-body {
+    margin: -10px;
+    background-image: url('/src/images/Ballon01.jpg');
+    /* we'll have to seed the data with background images??? how to get it to chagne */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #0C1726;
+    min-height:100vh;
+    
+}
+
+.postshow-content {
+    background: #ffffff80;
+    width: calc(100% - 4rem);
+    max-width: 72rem;
+    height: auto;
+    margin: 0 auto;
+    /* padding: 10px; */
+    min-height:100vh;
+    overflow: hidden;
+    border-top: solid 2px #eeeeee;
+}
+
+.postshow-title {
+    font-size: 2.5rem;
+    padding: 30px;
+    color: #8C0D2F;
+}
+
+.postshow-image {
+    width: 75%;
+}
+
+.postshow-hr {
+    border: 2px solid #0C172690;
+    width: 95%;
+}
+
+
+/* Create Post Form */
+.createpost-title, 
+.createpost-textinput {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 75%;
+    background: #BF925A90;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: #0C1726;
+    font-size: 1rem;
+}
+
+
+.createpost-title:hover, 
+.createpost-textinput:hover {
+    background: #BF925A;
+}
+
+.createpost-btn {
+    width: 20%;
+    color: #0C1726;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* SinglePost */
+li {
+    list-style: none;
+}
+
+.singlepost-content {
+    font-size: 1.4rem;
+}
+
+.singlepost-button {
+    font-size: 16px;
+    padding: 12px;
+    text-decoration: underline;
+    color:#8C0D2F;
+    font-weight: bold;
+}
+
+.singlepost-button:hover {
+    color: white;
+}
+
+
+/* Post */
+.section-caption {
+    font-size: 2rem;
+    color: #8C0D2F;
+}
+
+.post-title {
+    font-size: 1.6rem;
+}
+
+.post-title:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #0C1726;
+}
+
+a:visited {
+    color: #0C1726;
+}
+
+
+
+/* PostShowPage */

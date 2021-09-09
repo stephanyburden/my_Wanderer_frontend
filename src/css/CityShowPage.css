@@ -2,31 +2,33 @@
 
 .cityshow-body {
     margin: -10px;
-    background-image: url('../images/more-amsterdam.jpg');
-    /* we'll have to seed the data with background images??? how to get it to chagne */
+    background-image: url('../images/alex-azabache-GnqpSlWOO0A-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    color: #0C1726;
 }
 
 .cityshow-content {
-    background: #BFD1D980;
-    width: 70%;
+    background: #ffffff80;
+    width: calc(100% - 4rem);
+    max-width: 72rem;
     height: auto;
     margin: 0 auto;
-    padding: 10px;
+    /* padding: 10px; */
+    min-height:100vh;
+    overflow: hidden;
+    border-top: solid 2px #dbd6d6;
+    
 }
 
 .cityshow-title {
     font-size: 2.5rem;
-    padding: 30px;
-    color: #8C0D2F;
+    color: #A64F1C;
 }
 
 .cityshow-image {
-    width: 75%;
+    /* width: 75%; */
 }
 
 .cityshow-hr {
@@ -49,6 +51,7 @@
 ::placeholder {
     color: #0C1726;
     font-size: 1rem;
+    font-family: sans-serif;
 }
 
 
@@ -64,6 +67,7 @@
     font-size: 16px;
     padding: 5px;
     border-radius: 5px;
+    background: none;
 }
 
 
@@ -80,7 +84,7 @@ li {
     font-size: 16px;
     padding: 12px;
     text-decoration: underline;
-    color:#8C0D2F;
+    color: #A64F1C;
     font-weight: bold;
 }
 
@@ -92,7 +96,7 @@ li {
 /* Post */
 .section-caption {
     font-size: 2rem;
-    color: #8C0D2F;
+    color:  #A64F1C;;
 }
 
 .post-title {
@@ -100,7 +104,7 @@ li {
 }
 
 .post-title:hover {
-    color: white;
+    color: #0D0D0D;
 }
 
 a {
@@ -109,9 +113,33 @@ a {
 }
 
 a:visited {
-    color: #0C1726;
+    color:Black;
 }
 
 
+/* Edit Form */
+.editpost-title,
+.editpost-textinput {
+    margin: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 75%;
+    background: #BF925A90;
+    border-radius: 5px;
+}
 
-/* PostShowPage */
+.editpost-title:hover, 
+.editpost-textinput:hover {
+    background: #BF925A;
+}
+
+.createedit-btn {
+    width: 20%;
+    color: #A64F1C;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    background: none;
+}

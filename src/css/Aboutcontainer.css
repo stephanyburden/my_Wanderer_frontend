@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+
+
 #wrapper {
 position: relative;
 z-index: 1;
 overflow: hidden;
-background-color: #1e252d;
-font-family: "Merriweather", Georgia, serif;
+/* background-color: #1e252d; */
+font-family: "Montserrat";
 font-weight: 300;
 font-size: 1rem;
 line-height: 2.375;
 }
 
 #main {
-background-color: #ffffff;
+background-color: #ffffff80;
 position: relative;
 margin: 0 auto;
 width: calc(100% - 4rem);

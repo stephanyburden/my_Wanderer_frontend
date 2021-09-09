@@ -2,13 +2,15 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    background-color: #1e252d;
+    background-image: url(/src/images/timur-garifov-vCArUMDcHCQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
     font-weight: 300;    
     line-height: 2.375;
 }
 
 #aboutpage-container {
-    background-color: #ffffff;
+    background-color: #ffffff80;
     position: relative;
     margin: 0 auto;
     width: calc(100% - 4rem);

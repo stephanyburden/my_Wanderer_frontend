@@ -61,8 +61,8 @@ class AboutPage extends React.Component {
                 <div id="aboutpage-container">
                     <section className="post">
                         <header className="about-page-content">
-                            <h1>Why pick Gypsy<br /></h1>
-                            <p>GYPSY has a worldwide nearness with presence in cities all across the world.</p>
+                            <h1>Why pick Wanderer<br /></h1>
+                            <p>WANDERER has a worldwide nearness with presence in cities all across the world.</p>
                         </header>
                         <div style={{
                             padding: "0 20px"
