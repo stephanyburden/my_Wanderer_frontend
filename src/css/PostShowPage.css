@@ -8,7 +8,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    color: #0C1726;
+    color: black;
     min-height:100vh;
     
 }
@@ -28,7 +28,7 @@
 .postshow-title {
     font-size: 2.5rem;
     padding: 30px;
-    color: #8C0D2F;
+    color: black;
 }
 
 .postshow-image {
@@ -36,7 +36,7 @@
 }
 
 .postshow-hr {
-    border: 2px solid #0C172690;
+    border: 2px solid #DBD6D6;
     width: 95%;
 }
 
@@ -111,11 +111,11 @@ li {
 
 a {
     text-decoration: none;
-    color: #0C1726;
+    color: black;
 }
 
 a:visited {
-    color: #0C1726;
+    color: black;
 }
 
 

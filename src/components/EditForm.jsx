@@ -1,4 +1,6 @@
 import { Component } from "react";
+import '../css/CityShowPage.css';
+
 class EditForm extends Component {
     state = {
         title: this.props.post.title,
@@ -45,7 +47,7 @@ class EditForm extends Component {
                         placeholder="Content"
                         value={this.state.content}
                     />
-
+                    <br />
                     <button type="submit" className="btn createedit-btn">Update Post</button>
                 </form>
             </div>
