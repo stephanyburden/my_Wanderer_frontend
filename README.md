@@ -24,6 +24,14 @@ ERD Model & Route Flow
 
 React Component Model
 
+![Figma Mockup](readme_images/landing-page.jpeg)
+
+Landing Page Mockup
+
+![Figma Mockup](readme_images/show-page.jpeg)
+
+Show Page Mockup
+
 ## User Stories
 ### Who is the user?
 Our user is the budding or seasoned traveller who revels in exploring new places and cultures and wants to share it with the ever-growing travel community. 
