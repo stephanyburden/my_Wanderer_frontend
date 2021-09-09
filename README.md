@@ -47,7 +47,7 @@ If we continued to work on our project, we'd like to create solutions for the fe
 * Form Validators
 
 ## Triumphs
-Being able to scroll through compnents on the landing page was a challenge that we were able to transform into a win, once we were able to implement it into our project.
+Being able to scroll through compnents on the landing page was a challenge that we were able to transform into a win, once we were able to implement it into our project. Being able to come together as a team the night before the project was due and bring a collective vision to life after a week of struggling, helped make the final product something we could be proud of. 
 
 
 ## Challenges
